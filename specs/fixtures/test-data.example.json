@@ -1,0 +1,8 @@
+{
+  "healthcareProviderSelection": {
+    "clinicKeyword": "your-search-keyword",
+    "clinicName": "Your Clinic Name",
+    "clinicAddress": "123 Example St, City, Province A1A 1A1",
+    "providerName": "Dr. Smith"
+  }
+}

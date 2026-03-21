@@ -1,0 +1,19 @@
+{
+  "name": "agents",
+  "version": "1.0.0",
+  "description": "Playwright E2E test suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui --project=chromium",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@testing-library/dom": "^10.4.1",
+    "@types/node": "^25.5.0",
+    "dotenv": "^17.3.1"
+  }
+}
