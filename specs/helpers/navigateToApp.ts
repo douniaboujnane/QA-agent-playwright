@@ -1,4 +1,4 @@
-import { type Page } from "@playwright/test"
+import { expect, type Page } from "@playwright/test"
 
 export async function navigateToApp(
   page: Page,
@@ -9,4 +9,5 @@ export async function navigateToApp(
     await dialog.accept(password)
   })
   await page.goto(baseUrl)
+  await expect(page).toHaveURL(baseUrl)
 }

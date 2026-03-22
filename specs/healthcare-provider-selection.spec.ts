@@ -33,7 +33,9 @@ test.describe.serial("Healthcare Provider Selection via Text Search", () => {
   test("1 - Home page is displayed with 5-step carousel", async () => {
     await test.step("verify welcome heading and Start button", async () => {
       await expect(
-        page.getByText("Welcome to the platform. Prepare your appointment in 5 simple steps:")
+        page.getByText(
+          "Welcome to the Nurso platform. Prepare your appointment in 5 simple steps:"
+        )
       ).toBeVisible()
       await expect(page.getByRole("button", { name: "Start" })).toBeVisible()
     })
